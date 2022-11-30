@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <!-- <link rel="stylesheet" href="77.css"> -->
+    <!-- <script src="reg_member.js"></script> -->
+    <script src="reg.js"></script>
+</head>
+
+<body>
+    <hr>
+    <h1>회원가입</h1>
+    <hr>
+    <!-- 아이디 -->ID
+    <input id ="id" type="text" minlength="4" maxlength="12" required placeholder="4~12자리"><br>
+
+    <!-- 암호 -->PW
+    <input id = "pw" type="password" minlength="4" maxlength="12" required placeholder="4~12자리"><br>
+
+    <!-- 암호재입력 -->PW_RE
+    <input id = "pw_re" type="password" minlength="4" maxlength="12" required placeholder="4~12자리"><br>
+    
+    <!-- 이름 -->NAME
+    <input id="user_name"  minlength="4" maxlength="12" required placeholder="4~12자리"><br>
+    
+    <!-- 이메일 -->E-MAIL
+    <input id = "email" type="email"  minlength="4" maxlength="12" required placeholder="4~12자리"><br>
+    
+    <!-- 생년월일 -->BRITH
+    <input type = "number" id="birth_y" value = "1995" required>
+
+    <select id = "birth_m">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <select id = "birth_d">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select><br>
+    <!-- 성별 -->SEX
+    <input type = "radio" name="sex" value="M">남성
+    <input type = "radio" name="sex" value="G" checked>여성<br>
+    
+    <!-- 핸드폰번호 -->PHONE
+    <input id = "tel_1" type="tel"value="010" >-
+    <input id = "tel_2" type = "tel">-
+    <input id = "tel_3" type="tel">
+<br><br>
+<input id="submit" type="submit" value="회원가입" onclick="check()" >
+    <!-- <input type="button" value="회원가입"> -->
+
+</body>
+
+</html>
